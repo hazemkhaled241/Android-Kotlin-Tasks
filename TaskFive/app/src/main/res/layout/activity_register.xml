@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".RegisterActivity"
+
+    >
     <TextView
         android:id="@+id/tv_register_screen"
         android:layout_width="wrap_content"
@@ -24,7 +26,6 @@
         android:layout_marginStart="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_80sdp"
         android:layout_marginEnd="@dimen/_10sdp"
-
         android:hint="@string/register_email"
         app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
         app:boxCornerRadiusBottomStart="@dimen/_8sdp"
@@ -32,9 +33,9 @@
         app:boxCornerRadiusTopStart="@dimen/_8sdp"
         app:boxStrokeColor="@color/main"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_register_screen">
+        app:layout_constraintTop_toBottomOf="@+id/tv_register_screen"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_register_mail"

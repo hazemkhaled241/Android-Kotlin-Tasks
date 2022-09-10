@@ -18,12 +18,14 @@ class MainActivity : AppCompatActivity() {
         loginButton.setOnClickListener {
           if(email.text.toString().isNotEmpty() && password.text.toString().isNotEmpty()){
 
-
-
+             /* val intent = Intent(this, TestActivity::class.java)
+              intent.putExtra("keyString", "Logged")
+             startActivity(intent)*/
            Intent(this,HomeActivity::class.java).also {
                startActivity(it)
                finish()
            }
+
            }
         }
         registerButton.setOnClickListener {
