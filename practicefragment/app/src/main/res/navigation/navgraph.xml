@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/upperFragment">
+
+    <fragment
+        android:id="@+id/lowerFragment"
+        android:name="com.hazem.practicefragment.LowerFragment"
+        android:label="fragment_lower"
+        tools:layout="@layout/fragment_lower" >
+        <argument
+            android:name="test"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/upperFragment"
+        android:name="com.hazem.practicefragment.UpperFragment"
+        android:label="fragment_upper"
+        tools:layout="@layout/fragment_upper" >
+        <action
+            android:id="@+id/action_upperFragment_to_lowerFragment"
+            app:destination="@id/lowerFragment">
+
+            <argument android:name="test" />
+        </action>
+    </fragment>
+</navigation>
